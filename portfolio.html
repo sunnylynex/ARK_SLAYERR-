@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Nexus Forge</title>
+<meta name="description" content="Browse completed game mod commissions across Smash Ultimate, Risk of Rain 2, Brawlhalla, Skyrim, Resident Evil, and Borderlands.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo"><span class="mark">N</span>NEXUS FORGE</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <a href="contact.html" class="btn btn-primary btn-sm">Start Commission</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary btn-block">Start Commission</a>
+</div>
+
+<section class="page-hero wrap">
+  <div class="eyebrow" style="justify-content:center">Portfolio</div>
+  <h1 class="display">Commissions I've shipped.</h1>
+  <p>Every project below was delivered to a paying client. Filter by game, or open a project for the full breakdown — software used, materials, and animation work included.</p>
+</section>
+
+<!-- ================= FILTERABLE GRID ================= -->
+<section style="padding-top:20px;">
+  <div class="wrap">
+    <div class="filter-bar" id="filterBar"></div>
+    <div class="project-grid" id="portfolioGrid"></div>
+  </div>
+</section>
+
+<!-- ================= BEFORE / AFTER ================= -->
+<section style="border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:rgba(255,255,255,.015);">
+  <div class="wrap">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center">Before / After</div>
+      <h2 class="display">See the transformation.</h2>
+      <p>Drag the handle to compare a base-game asset against the finished commission.</p>
+    </div>
+
+    <div class="ba-slider reveal">
+      <div class="ba-after">
+        <svg class="ba-icon" viewBox="0 0 48 48" fill="none" style="color:#fff"><path d="M24 5L32 20H26V43H22V20H16L24 5Z" fill="currentColor"/></svg>
+        <span style="font-weight:700;">Custom Follower — Finished Commission</span>
+      </div>
+      <div class="ba-before">
+        <div class="ba-before-inner">
+          <svg class="ba-icon" viewBox="0 0 48 48" fill="none" style="color:#94A3B8"><path d="M24 5L32 20H26V43H22V20H16L24 5Z" fill="currentColor"/></svg>
+          <span style="font-weight:700; color:#cbd5e1;">Base Game Asset</span>
+        </div>
+      </div>
+      <span class="ba-label left">Before</span>
+      <span class="ba-label right">After</span>
+      <div class="ba-handle"></div>
+    </div>
+    <p style="text-align:center; margin-top:18px; font-size:12.5px; color:var(--text-faint);">
+      Replace this block with a real before/after screenshot pair from your own commission work.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="final-cta reveal">
+      <div class="eyebrow" style="justify-content:center">Like what you see?</div>
+      <h2 class="display">Let's build your commission next.</h2>
+      <a href="contact.html" class="btn btn-primary">Start Your Mod Commission</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="mark">N</span>NEXUS FORGE</a>
+        <p>Professional game mod commissions — character imports, custom fighters, movesets, skins, UI, and animation work.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Site</h5>
+          <a href="index.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="https://discord.gg/">Discord</a>
+          <a href="mailto:hello@nexusforge.dev">Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Nexus Forge. Fan-made commission work — not affiliated with or endorsed by any game publisher.</p>
+      <p>Built for clients who want a mod that ships.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<a href="https://discord.gg/" class="discord-fab" aria-label="Join Discord">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.369a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.6 12.6 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.128 12.3 12.3 0 0 1-1.873.891.076.076 0 0 0-.04.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.029 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.055c.5-5.177-.838-9.674-3.548-13.66a.06.06 0 0 0-.031-.028ZM8.02 15.331c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.955 2.419-2.157 2.419Zm7.974 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.419 0 1.334-.947 2.419-2.157 2.419Z"/></svg>
+  Join Discord
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
